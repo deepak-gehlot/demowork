@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Dollar Star</string>
+
+    <string name="facebook_app_id">149350428817249</string>
+
+    <string name="title_activity_registration">Registration</string>
+    <string name="dialog_default_title">Here\'s a message!</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="LOADING">Loading...</string>
+
+    <string name="all_field_requied">Please fill all the fields.</string>
+    <string name="wrong">Something went wrong, Please try again.</string>
+    <string name="no_internet">No Internet connectivity ,Please connect to your network.</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_comment_list">CommentListActivity</string>
+    <string name="title_activity_view_profile">ViewProfileActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+
+
+    <string name="share_text">Hi, checkout this Awesome app which you can download from here </string>
+    <string name="share_url">https://play.google.com/store/apps/details?id=com.widevision.dollarstar </string>
+    <string name="title_activity_maps">Map</string>
+</resources>

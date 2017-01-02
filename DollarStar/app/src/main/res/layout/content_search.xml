@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.widevision.dollarstar.activity.SearchActivity"
+    tools:showIn="@layout/activity_search">
+
+    <com.widevision.dollarstar.model.CustomEditText
+        android:id="@+id/search_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_bar_back"
+        android:drawableLeft="@drawable/search_edt"
+        android:hint="Search for people"
+        android:imeOptions="actionSearch"
+        android:lines="1"
+        android:padding="8dp"
+        android:singleLine="true" />
+
+    <com.widevision.dollarstar.model.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Search friends on\n'DollarStar'"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:layout_centerInParent="true"
+        android:id="@+id/hint_text"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_edit"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

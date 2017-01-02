@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="25dp"
+    android:background="@drawable/rounder_back_white"
+    android:orientation="vertical">
+
+    <com.widevision.dollarstar.model.CustomTextView
+        android:id="@+id/action_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:lines="1"
+        android:padding="10dp"
+        android:text="Report..."
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="17sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#9b9a9a" />
+
+    <com.widevision.dollarstar.model.CustomTextView
+        android:id="@+id/action_copy_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:lines="1"
+        android:padding="10dp"
+        android:text="Copy URL"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="17sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#9b9a9a" />
+
+    <com.widevision.dollarstar.model.CustomTextView
+        android:id="@+id/action_faq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:lines="1"
+        android:padding="10dp"
+        android:text="FAQ"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="17sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#9b9a9a" />
+
+    <com.widevision.dollarstar.model.CustomTextView
+        android:id="@+id/action_postnotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:lines="1"
+        android:padding="10dp"
+        android:text="Post Notification Enable"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="17sp" />
+
+</LinearLayout>

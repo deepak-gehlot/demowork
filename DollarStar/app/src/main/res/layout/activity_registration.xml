@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.widevision.dollarstar.activity.RegistrationActivity">
+
+    <!-- <RelativeLayout
+         android:id="@+id/topPanel"
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="0.35"
+         android:visibility="gone">
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             android:weightSum="1">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                 android:layout_weight="0.7"
+                 android:background="@color/golden" />
+         </LinearLayout>
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             android:weightSum="1">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                 android:layout_weight="0.4" />
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                 android:layout_weight="0.6"
+                 android:gravity="center">
+
+                 <de.hdodenhof.circleimageview.CircleImageView
+                     android:id="@+id/profileIMG"
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:scaleType="centerCrop"
+                     android:src="@mipmap/ic_launcher"
+                     app:civ_border_color="@color/white"
+                     app:civ_border_overlay="false"
+                     app:civ_border_width="5dp" />
+
+             </LinearLayout>
+
+         </LinearLayout>
+
+         <com.widevision.dollarstar.model.CustomTextView
+             android:id="@+id/back_BTN"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:drawableLeft="@drawable/backicon"
+             android:drawableTint="@color/white"
+             android:gravity="center_vertical"
+             android:padding="10dp"
+             android:text="  Back"
+             android:textColor="@color/white"
+             android:textSize="23sp" />
+
+     </RelativeLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/golden">
+
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="10dp"
+                android:src="@drawable/backicon" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:src="@drawable/topbarlogo" />
+        </LinearLayout>
+
+        <com.widevision.dollarstar.model.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Registration"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:fadingEdge="none"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <com.widevision.dollarstar.model.CustomEditText
+                android:id="@+id/name_EDT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textfield"
+                android:hint="Name"
+                android:inputType="textCapWords"
+                android:lines="1"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <com.widevision.dollarstar.model.CustomEditText
+                android:id="@+id/email_EDT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/textfield"
+                android:hint="Email ID"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <com.widevision.dollarstar.model.CustomEditText
+                android:id="@+id/password_EDT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/textfield"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <com.widevision.dollarstar.model.CustomEditText
+                android:id="@+id/confirm_password_EDT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/textfield"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <com.widevision.dollarstar.model.CustomEditText
+                android:id="@+id/contact_number_EDT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/textfield"
+                android:hint="Contact Number"
+                android:inputType="number"
+                android:lines="1"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/textfield">
+
+                <Spinner
+                    android:id="@+id/gender_SPNR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></Spinner>
+
+            </LinearLayout>
+
+            <com.widevision.dollarstar.model.CustomButton
+                android:id="@+id/sign_up_BTN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/golden"
+                android:gravity="center"
+                android:onClick="onClickSubmitButton"
+                android:padding="10dp"
+                android:text="SIGN UP"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

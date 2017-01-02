@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.widevision.dollarstar.activity.CommentListActivity"
+    tools:showIn="@layout/activity_comment_list">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_comment_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_row"
+     ></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/bottom_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#E5E5E5"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="1">
+
+        <com.widevision.dollarstar.model.CustomEditText
+            android:id="@+id/comment_EDT"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_background"
+            android:lines="2"
+            android:textSize="17sp"
+            android:hint="Your comment goes here..."
+            android:gravity="start"
+            android:textColor="#000000"
+            android:padding="10dp"/>
+
+        <com.widevision.dollarstar.model.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/send_TXT"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="Post"
+            android:textSize="17sp"
+            android:textColor="#2D6A8E"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
